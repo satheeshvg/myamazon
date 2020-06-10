@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import pageobjects.Homepage;
 import resources.driverinit;
@@ -23,6 +24,7 @@ public class homepagetest extends driverinit {
 	public WebDriver driver;
 	Homepage hp;
 	Actions a;
+	SoftAssert soft=new SoftAssert();
 	@Test(priority=0)
 	public void Checktext()
 	{
@@ -30,6 +32,7 @@ public class homepagetest extends driverinit {
 		
 		a.moveToElement(hp.hellosignin()).build().perform();
 		Assert.assertTrue(hp.yourlisttext().getText().equalsIgnoreCase("Your Lists"));
+		
 		Assert.assertTrue(hp.youraccounttext().getText().equalsIgnoreCase("Your Account"));
 		
 	}
@@ -41,7 +44,8 @@ public class homepagetest extends driverinit {
 		Assert.assertTrue(hp.yourlistlinks()==12);
 		log.info("yourlist has "+hp.yourlistlinks()+" links");
 		Assert.assertTrue(hp.youraccountlinks()==17);
-		log.info("yourlist has "+hp.youraccountlinks()+" links");
+		log.info("youraccount has "+hp.youraccountlinks()+" links");
+	
 		
 	}
 	

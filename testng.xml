@@ -9,14 +9,5 @@
       <class name="amazon.homepagetest"/>
     </classes>
   </test> 
- <test name="Test2">
- <classes>
- <class name="amazon.iphonelandingpagetest"/>
- </classes>
- </test>
- <test name="Test3">
- <classes>
- <class name="amazon.mainpagetest"/>
- </classes>
- </test>
+
 </suite> <!-- Suite -->
