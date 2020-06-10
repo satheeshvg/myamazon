@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 71.954 s <<< FAILURE! - in TestSuite
+Nooflinks(amazon.homepagetest)  Time elapsed: 0.501 s  <<< FAILURE!
+java.lang.AssertionError
+	at amazon.homepagetest.Nooflinks(homepagetest.java:41)
+
