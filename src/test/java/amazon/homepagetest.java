@@ -41,7 +41,7 @@ public class homepagetest extends driverinit {
 	public void Nooflinks() throws InterruptedException
 	{
 		System.out.println(hp.yourlistlinks());
-		Assert.assertTrue(hp.yourlistlinks()==12);
+		Assert.assertTrue(hp.yourlistlinks()==14);
 		log.info("yourlist has "+hp.yourlistlinks()+" links");
 		Assert.assertTrue(hp.youraccountlinks()==17);
 		log.info("youraccount has "+hp.youraccountlinks()+" links");
