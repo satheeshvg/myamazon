@@ -46,7 +46,7 @@ public class driverinit {
 	public String screenshot(String result, WebDriver driver) throws IOException
 	{
 		
-		String path=".\\"+result+".png";
+		String path=".\\reports\\"+result+".png";
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File(path));
 		return path;
