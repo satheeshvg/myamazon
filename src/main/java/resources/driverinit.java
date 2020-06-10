@@ -43,13 +43,13 @@ public class driverinit {
 		return driver;
 	}
 	
-	public String screenshot(String result, WebDriver driver) throws IOException
+	public void screenshot(String result, WebDriver driver) throws IOException
 	{
 		
-		String path=".\\reports\\"+result+".png";
+		String path=System.getProperty("user.dir")+"\\reports\\"+result+".png";
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File(path));
-		return path;
+		
 	}
 	
 }

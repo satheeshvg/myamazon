@@ -42,9 +42,15 @@ public class listeners extends driverinit implements ITestListener{
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+		try {
+			screenshot(name,driver);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 		try {
-			thread.get().addScreenCaptureFromPath(screenshot(name,driver));
+			thread.get().addScreenCaptureFromPath(".\\"+name+".png");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
